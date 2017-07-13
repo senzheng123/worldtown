@@ -1,0 +1,65 @@
+
+.RequestDashborad {
+   position: relative;
+   height: 100%;
+   float: right;
+
+}
+
+ul {
+	list-style: none;
+}
+
+.panel-body {
+  text-align: center;
+}
+
+.requestdashborad_left{
+	padding-right: 0px;
+}
+
+.requestdashborad_left input{
+	border: 1px solid #dee1e5;
+    border-radius: 8px;
+    margin: 0px;
+    width:100px;
+}
+
+
+.panel {
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+
+.panel .panel-title {
+	font-size: 12px;
+}
+
+.panel .panel-heading {
+  border-color: #0960ea;
+  border-bottom: 0px;
+}
+
+.panel-heading {
+    border-left: 4px solid #0960ea;
+    border-radius: 0px;
+}
+
+.panel-title {
+	display: inline;
+}
+
+.filterreset {
+	 display: inline;
+	 position: absolute;
+	 right: 10px;
+	 font-size: 12px;
+}
+
+.carMake {
+	border: 1px solid #dee1e5;
+    border-radius: 8px;
+	width: 220px;
+	height: 25px;
+	margin-bottom: 10px;
+}

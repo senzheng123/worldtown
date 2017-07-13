@@ -1,0 +1,35 @@
+{
+  "name": "superbear",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "amqplib": "^0.4.1",
+    "ejs":"~1.0.0",
+    "bcrypt-nodejs": "*",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "mongodb": "^2.0.46",
+    "mongoose": "4.2.2",
+    "monk":"~4.0.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2",
+    "request-json": "^0.5.3",
+    "passport": "~0.2.0",
+    "express-session": "~1.0.4",
+    "passport-local": "~1.0.0",
+    "connect-flash": "*",
+    "connect-mongo": "^1.1.0",
+    "shortid": "^2.2.4",
+    "nodemailer": "^0.7.1",
+    "stripe": "^4.0.0",
+    "synchronize": "^0.9.15",
+    "sync-request": "^3.0.0",
+    "compression": "1.6.2"
+  }
+}

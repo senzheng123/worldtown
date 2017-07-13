@@ -1,0 +1,86 @@
+
+/*adjust the out fram*/
+body .profile_frame{
+	display:block;
+	/*border:#333 solid;*/ 
+	width:40%;
+}
+
+body .side_info{
+	/*border:2px green solid;*/
+	width:20%;
+	box-shadow: 5px 5px 5px #888888;
+}
+/*.help_img{
+	background-image:url(../pic/noc.jpg);
+} */
+.side_info label{
+	margin:1em 0 1em 0;
+}
+/*the form margin*/
+.update_profile_form{
+	/*border:2px green solid;*/
+	margin: 1em 2em 3em 1em;
+}
+.change_pass_form{
+	margin: 1em 2em 3em 1em;
+}
+shop_form{
+	margin: 1em 2em 3em 1em;
+}
+
+/*set input's edge to round*/
+.form-group input{
+	border-radius:2em;
+}
+/*set margin between label and input*/
+.container label{
+	margin-bottom:1em;	
+}
+/*button settings*/
+.form-group .sub_button{
+	background-color:#3CF;
+	border-color:transparent;
+	border-radius:2em;
+	padding:0.5em 3em 0.5em 3em;
+	margin:1em 0.1em 0.1em 1em;
+}
+
+.side_info .sub_button{
+	background-color:#3CF;
+	border-color:transparent;
+	border-radius:2em;
+	width:100%;
+	margin-left:0em;
+}
+
+
+.main-footer{
+	background-color:rgb(34,47,55);
+}
+
+.footer_row{
+	/*border:red solid;*/
+	margin:2em 0em 0em 5em;
+
+}
+
+.footer_logo{
+	margin-top:2em;
+}
+.footer_choice{
+	color:white;
+}
+
+.footer_choice h5{
+	margin-bottom:1.5em;
+}
+
+.footer_choice p{
+	color:#CCC;
+	font-size:12px;
+}
+.footer_copy_right{
+	font-size:9px;
+	color:#CCC;
+}

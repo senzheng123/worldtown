@@ -1,0 +1,45 @@
+extends ../layouts/master
+   
+block content
+   link(rel='stylesheet', href='/css/style_0506.css')
+   script(src='/javascripts/ProfileupdateController.js')
+   .contents( ng-app='caknow')
+     .leftside.col-md-2.middle.row
+      .sidetitle
+       h4 Profile
+      .profile
+       ul
+        li Shop Information
+        li Contact
+        li Bussiness Hours
+        li Premium Information
+        li My Rates
+        li Payment
+        li Notification
+        li Change password  
+     .rightside.col-md-10 
+       .container.profile_frame
+        form(action='/updateServiceProvider', method='GET', ng-controller='updateUser')
+         .form-group
+           .col-md-12(style='margin-left:-1em;')
+             label.control-label Contact Name
+             .row(style='margin-left:0; width:115%;')
+               .form-group.col-sm-6(style='margin-left:-1em;')
+                 input.form-control(type='text', name="firstname",placeholder='#{user.firstname}')
+               .form-group.col-sm-6(style='margin-left:-1.5em;')
+                 input.form-control(type='text', name="lastname",placeholder='#{user.lastname}')  
+          .form-group
+             label.control-label Title
+             input.form-control(type='text', name='businessname', placeholder='Example Owner', st='')
+          .form-group
+             label.control-label E-mail Address
+             input.form-control(type='email', name='email', placeholder= '#{user.email}', value='',ng-model='email' ,ng-blur='check(email, null)')
+          .form-group
+             label.control-label Phone Number
+             input.form-control(type='text', name='phonenumber', placeholder='(222)555-0000', ng-model='phonenumber' ,ng-blur='check(null ,phonenumber)')
+          .form-group(align='center')
+             input.btn.btn-primary(type='button', value='Clear')
+             input.btn.btn-primary(type='submit', value='Submit')              
+      // right side show panel
+      
+    // ends of the right side

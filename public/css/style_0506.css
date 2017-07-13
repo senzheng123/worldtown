@@ -1,0 +1,31 @@
+
+/*adjust the out fram*/
+.profile_frame{
+	display:block;
+	border: solid; 
+	width:70%;
+	float: left;
+	border: #e8eaed;
+    box-shadow: 10px 10px 10px #888888;
+}
+/*the form margin*/
+form{
+	/*border:2px green solid;*/
+	margin: 1em 2em 3em 1em;
+}
+/*set input's edge to round*/
+.form-group input{
+	border-radius:2em;
+}
+/*set margin between label and input*/
+.container label{
+	margin-bottom:1em;	
+}
+/*button settings*/
+.form-group button{
+	background-color:#3CF;
+	border-color:transparent;
+	border-radius:2em;
+	padding:0.5em 3em 0.5em 3em;
+	margin:1em 0.1em 0.1em 1em;
+}

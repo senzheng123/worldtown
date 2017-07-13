@@ -1,0 +1,45 @@
+/*This the style file for the main page or we called login page or sign in or sign up page*/
+body {
+	height: 100%;
+	width:100%;
+}
+.index_head {
+	margin-bottom: 0px;
+}
+
+.index_main {
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	background-image: url("../images/login-bg.jpg");
+}
+
+.index_login {
+	margin-top: 20px;
+	margin-right: 15px;
+	position: relative;
+	width: 450px;
+	height: 280px;
+	background-color: white;
+	float: right;
+}
+
+.index_login form {
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.index_login form input{
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.index_login form input:nth-child(3){
+	color: white;
+   background-color: #0467da;
+   border: 0px;
+}
+
+.index_login form a {
+	color: #0467da;
+}

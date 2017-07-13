@@ -1,0 +1,1304 @@
+doctype html
+//if IE 7
+  html.ie7.no-js(lang='en')
+//if lte IE 8
+  html.ie8.no-js(lang='en')
+// [if (gte IE 9)|!(IE)] <!
+html.not-ie.no-js(lang='en')
+    // <![endif]
+    head
+        title Games Throne | Home Page
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        link(rel='shortcut', href='images/favicon.ico')
+        link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+        // initialize jQuery Library
+        script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+        //if lt IE 9
+          script(src='js/modernizr.custom.js')
+          script(src='http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js')
+          script(type='text/javascript', src='js/ie.js')
+    body.background-3.h-style-1.text-1.skin-1
+        // ***************** - Wrapper - *******************
+        #wrapper
+            // ***************** - Header - *****************
+            header.clearfix
+                // ***************** - Main Navigation - *****************
+                nav#navigation.navigation
+                    ul
+                        li
+                            a(href='about.html') Pages
+                            ul.sub-menu
+                                li
+                                    a(href='about.html') About
+                                li
+                                    a(href='#') Dropdown
+                                    ul
+                                        li
+                                            a(href='#') Dropdown 1
+                                        li
+                                            a(href='#') Dropdown 2
+                                        li
+                                            a(href='#') Dropdown 3
+                                li
+                                    a(href='404page.html') 404 Page
+                            // / .sub-menu
+                        li
+                            a(href='headings.html') Features
+                            ul.sub-menu
+                                li
+                                    a(href='headings.html') Headings
+                                li
+                                    a(href='images-and-floats.html') Images and floats
+                                li
+                                    a(href='pricing-tables.html') Pricing Tables
+                                li
+                                    a(href='typography.html') Typography
+                                li
+                                    a(href='toggle.html') FAQ Toggle
+                                li
+                                    a(href='tables.html') Tables
+                                li
+                                    a(href='buttons.html') Buttons
+                                li
+                                    a(href='columns.html') Column Layout
+                                li
+                                    a(href='tabs.html') Tabs
+                            // / .sub-menu
+                        li
+                            a(href='gallery.html') Gallery
+                        li
+                            a(href='blog-style-1.html') Blog
+                            ul.sub-menu
+                                li
+                                    a(href='blog-style-1.html') Blog Page
+                                li
+                                    a(href='blog-style-2.html') Alternate Blog Page
+                                li
+                                    a(href='blog-single.html') Blog Single Page
+                            // / .sub-menu
+                        li
+                            a(href='contacts.html') Contacts
+                    .account-wrapper
+                        ul#user-account-nav
+
+                            if !user
+                                li
+                                    a(href='#login') Login
+                                li
+                                    a(href='#sign') Create an account
+                            else
+                                h6.welcome #{user.username}
+                        // / #user-account-nav
+                    // / .account-wrapper
+                // / #navigation
+                // ***************** - END Main Navigation - *******************
+                // ***************** - Logo - *******************
+        #login.modalDialog
+            div
+                a.close(href='#close', title='Close') X
+                h2 Modal Box
+                p This is a sample modal box that can be created using the powers of CSS3.
+                p
+                    | You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.
+        #sign.modalDialog
+            div
+                a.close(href='#close', title='Close') X
+                h2 Modal Box
+                p This is a sample modal box that can be created using the powers of CSS3.
+                p
+                    | You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.
+
+            #logo
+                    a(href='index-2.html')
+                        h1 Games
+                        span Theme
+                    .slogan The Latest News of Games
+                // / #logo
+                // ***************** - END Logo - *******************
+            // ***************** - END Header - *****************
+            // *************** - Container - ***************
+            .container
+                // ************** - Search - **************
+                .search-container
+                    form#searchForm(action='http://sc.chinaz.com/')
+                        fieldset
+                            label(for='term') Search
+                            input#term(type='text')
+                            input(type='submit', value='Submit')
+                    // / #searchForm
+                // / .search-container
+                // *************** - END Search - ***************
+                // ************** - Platform Navigation - **************
+                nav#platform-menu.platform-menu
+                    a.home(href='index-2.html') Home
+                    ul
+                        li
+                            a(href='#') XBOX 360
+                            ul.sub-menu
+                                li
+                                    a(href='reviews.html') Reviews
+                                li
+                                    a(href='previews.html') Previews
+                                li
+                                    a(href='new-releases.html') New Releases
+                                li
+                                    a(href='top-games.html') Top Games
+                        li
+                            a(href='#') PC
+                            ul.sub-menu
+                                li
+                                    a(href='reviews.html') Reviews
+                                li
+                                    a(href='previews.html') Previews
+                                li
+                                    a(href='new-releases.html') New Releases
+                                li
+                                    a(href='top-games.html') Top Games
+                        li
+                            a(href='#') PS3
+                            ul.sub-menu
+                                li
+                                    a(href='reviews.html') Reviews
+                                li
+                                    a(href='previews.html') Previews
+                                li
+                                    a(href='new-releases.html') New Releases
+                                li
+                                    a(href='top-games.html') Top Games
+                        li
+                            a(href='#') Wii
+                            ul.sub-menu
+                                li
+                                    a(href='reviews.html') Reviews
+                                li
+                                    a(href='previews.html') Previews
+                                li
+                                    a(href='new-releases.html') New Releases
+                                li
+                                    a(href='top-games.html') Top Games
+                        li
+                            a(href='#') 3DS
+                            ul.sub-menu
+                                li
+                                    a(href='reviews.html') Reviews
+                                li
+                                    a(href='previews.html') Previews
+                                li
+                                    a(href='new-releases.html') New Releases
+                                li
+                                    a(href='top-games.html') Top Games
+                        li
+                            a(href='#') PS Vita
+                            ul.sub-menu
+                                li
+                                    a(href='reviews.html') Reviews
+                                li
+                                    a(href='previews.html') Previews
+                                li
+                                    a(href='new-releases.html') New Releases
+                                li
+                                    a(href='top-games.html') Top Games
+                        li
+                            a(href='#') iPhone
+                            ul.sub-menu
+                                li
+                                    a(href='reviews.html') Reviews
+                                li
+                                    a(href='previews.html') Previews
+                                li
+                                    a(href='new-releases.html') New Releases
+                                li
+                                    a(href='top-games.html') Top Games
+                        li
+                            a(href='#') Android
+                            ul.sub-menu
+                                li
+                                    a(href='reviews.html') Reviews
+                                li
+                                    a(href='previews.html') Previews
+                                li
+                                    a(href='new-releases.html') New Releases
+                                li
+                                    a(href='top-games.html') Top Games
+                // / .platform-menu
+                // ************** - END Platform Navigation - **************
+                // ************** - Featured Slider - **************
+                #showcase.showcase
+                    .showcase-slide
+                        // Put the slide content in a div with the class .showcase-content.
+                        .showcase-entry
+                            img(src='images/slider/01.jpg', width='730', height='460', alt='01')
+                        // Put the thumbnail content in a div with the class .showcase-thumbnail
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/01.jpg', alt='01')
+                            span.showcase-thumbnail-console Xbox 360
+                            h6.showcase-thumbnail-title
+                                a(href='#') Consectetur
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 Consectetur
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        .showcase-entry
+                            img(src='images/slider/02.jpg', width='730', height='460', alt='02')
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/02.jpg', alt='02')
+                            span.showcase-thumbnail-console PC, PS3
+                            h6.showcase-thumbnail-title
+                                a(href='#') adipisicing consectetur elit
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 adipisicing consectetur elit
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        .showcase-entry
+                            img(src='images/slider/03.jpg', width='730', height='460', alt='03')
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/03.jpg', alt='03')
+                            span.showcase-thumbnail-console Xbox 360, Wii
+                            h6.showcase-thumbnail-title
+                                a(href='#') incididunt 2
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 incididunt 2
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        .showcase-entry
+                            img(src='images/slider/04.jpg', width='730', height='460', alt='04')
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/04.jpg', alt='04')
+                            span.showcase-thumbnail-console Xbox 360, Pc
+                            h6.showcase-thumbnail-title
+                                a(href='#') do eiusmod sed
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 do eiusmod sed
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit,  do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        // Put the slide content in a div with the class .showcase-content.
+                        .showcase-entry
+                            img(src='images/slider/05.jpg', width='730', height='460', alt='05')
+                        // Put the thumbnail content in a div with the class .showcase-thumbnail
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/05.jpg', alt='05')
+                            span.showcase-thumbnail-console Xbox 360
+                            h6.showcase-thumbnail-title
+                                a(href='#') dolore at magna
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 dolore at magna
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        // Put the slide content in a div with the class .showcase-content.
+                        .showcase-entry
+                            img(src='images/slider/06.jpg', width='730', height='460', alt='06')
+                        // Put the thumbnail content in a div with the class .showcase-thumbnail
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/06.jpg', alt='06')
+                            span.showcase-thumbnail-console PC, PS3
+                            h6.showcase-thumbnail-title
+                                a(href='#') et dolore magna: aliqua
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 et dolore magna: aliqua
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        .showcase-entry
+                            img(src='images/slider/03.jpg', width='730', height='460', alt='03')
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/03.jpg', alt='03')
+                            span.showcase-thumbnail-console Xbox 360, Wii
+                            h6.showcase-thumbnail-title
+                                a(href='#') incididunt 2
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 incididunt 2
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        .showcase-entry
+                            img(src='images/slider/04.jpg', width='730', height='460', alt='04')
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/04.jpg', alt='04')
+                            span.showcase-thumbnail-console Xbox 360, Pc
+                            h6.showcase-thumbnail-title
+                                a(href='#') do eiusmod sed
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 do eiusmod sed
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit,  do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        // Put the slide content in a div with the class .showcase-content.
+                        .showcase-entry
+                            img(src='images/slider/05.jpg', width='730', height='460', alt='05')
+                        // Put the thumbnail content in a div with the class .showcase-thumbnail
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/05.jpg', alt='05')
+                            span.showcase-thumbnail-console Xbox 360
+                            h6.showcase-thumbnail-title
+                                a(href='#') dolore at magna
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 dolore at magna
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                    .showcase-slide
+                        // Put the slide content in a div with the class .showcase-content.
+                        .showcase-entry
+                            img(src='images/slider/06.jpg', width='730', height='460', alt='06')
+                        // Put the thumbnail content in a div with the class .showcase-thumbnail
+                        .showcase-thumbnail
+                            img(src='images/slider/thumbs/06.jpg', alt='06')
+                            span.showcase-thumbnail-console PC, PS3
+                            h6.showcase-thumbnail-title
+                                a(href='#') et dolore magna: aliqua
+                        // Put the caption content in a div with the class .showcase-caption
+                        .showcase-caption.clearfix
+                            h2 et dolore magna: aliqua
+                            .showcase-description
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                | labore et dolore magna aliqua. Ut enim ad minim veniam
+                            a.button.small.red.align-btn-right(href='#') Read More
+                            .star
+                // ************** - END Featured Slider - *x*************
+                // ************** - Scroll Container - **************
+                .scroll-container
+                    // ************** - UI Scroller - **************
+                    h3 In the Mix
+                    .scroller_wrap
+                        .scroller_block
+                            ul(style='width:1980px')
+                                li
+                                    a(href='#')
+                                        img.small-custom-frame(src='images/temp/temp_img_1.jpg', width='222', height='137', alt='')
+                                    .scroll-caption
+                                        span Xbox 360
+                                        h6
+                                            a(href='#') Lorem ipsum dolor sit amet consec
+                                        .star
+                                    // / .scroll-caption
+                                li
+                                    a(href='#')
+                                        img.small-custom-frame(src='images/temp/temp_img_2.jpg', width='222', height='137', alt='')
+                                    .scroll-caption
+                                        span Xbox 360
+                                        h6
+                                            a(href='#') Lorem ipsum dolor sit amet consec
+                                        .star
+                                    // / .scroll-caption
+                                li
+                                    a(href='#')
+                                        img.small-custom-frame(src='images/temp/temp_img_3.jpg', width='222', height='137', alt='')
+                                    .scroll-caption
+                                        span Xbox 360
+                                        h6
+                                            a(href='#') Lorem ipsum dolor sit amet consec
+                                        .star
+                                    // / .scroll-caption
+                                li
+                                    a(href='#')
+                                        img.small-custom-frame(src='images/temp/temp_img_4.jpg', width='222', height='137', alt='')
+                                    .scroll-caption
+                                        span Xbox 360
+                                        h6
+                                            a(href='#') Lorem ipsum dolor sit amet consec
+                                        .star
+                                    // / .scroll-caption
+                                li
+                                    a(href='#')
+                                        img.small-custom-frame(src='images/temp/temp_img_1.jpg', width='222', height='137', alt='')
+                                    .scroll-caption
+                                        span Xbox 360
+                                        h6
+                                            a(href='#') Lorem ipsum dolor sit amet consec
+                                        .star
+                                    // / .scroll-caption
+                                li
+                                    a(href='#')
+                                        img.small-custom-frame(src='images/temp/temp_img_2.jpg', width='222', height='137', alt='')
+                                    .scroll-caption
+                                        span Xbox 360
+                                        h6
+                                            a(href='#') Lorem ipsum dolor sit amet consec
+                                        .star
+                                    // / .scroll-caption
+                                li
+                                    a(href='#')
+                                        img.small-custom-frame(src='images/temp/temp_img_3.jpg', width='222', height='137', alt='')
+                                    .scroll-caption
+                                        span Xbox 360
+                                        h6
+                                            a(href='#') Lorem ipsum dolor sit amet consec
+                                        .star
+                                    // / .scroll-caption
+                                li
+                                    a(href='#')
+                                        img.small-custom-frame(src='images/temp/temp_img_4.jpg', width='222', height='137', alt='')
+                                    .scroll-caption
+                                        span Xbox 360
+                                        h6
+                                            a(href='#') Lorem ipsum dolor sit amet consec
+                                        .star
+                                    // / .scroll-caption
+                        // / .sroller_block
+                        .scroller_slider
+                            a.scroller_slider_prev(href='#')
+                            a.scroller_slider_next(href='#')
+                            .scroller_slider_bar
+                        // / .scroller_slider
+                    // / .scroller_wrap
+                    // ************** - END UI Scroller - **************
+                // / .content-container
+                // ************** - END Content Container - **************
+                // ************** - Entry - **************
+                .entry.clearfix
+                    // ************** - Content - **************
+                    #content
+                        // *************** - Tabs Container - ***************
+                        .tabs-1
+                            ul.tabs-nav.clearfix
+                                li
+                                    a(href='#tab1') Latest
+                                li
+                                    a(href='#tab2') Popular
+                                li
+                                    a(href='#tab3') Features
+                            // / .tabs-nav
+                            .tabs-container
+                                #tab1.tab-content
+                                    .gamelist
+                                        ul.clearfix
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/img_1.jpg', width='313', height='220', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') Lorem ipsum dolor sit amet consectetur
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 25 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                        a.ps3(href='#') PS3
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/img_2.jpg', width='313', height='220', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') nt in culpa qui offici
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_1.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') sed do eiusmod tempor incididunt
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_2.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') Lorem ipsum dolor sit amet consectetur
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.pc(href='#') PC
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_3.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') ut labore et dolore magna aliqua
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                        a.ps-vista(href='#') Ps Vista
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                        a.button.small.yellow.align-btn-right(href='#') More Latest
+                                    // / .gamelist
+                                // / #tab1
+                                #tab2.tab-content
+                                    .gamelist
+                                        ul.clearfix
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/img_2.jpg', width='313', height='220', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') nt in culpa qui offici
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/img_1.jpg', width='313', height='220', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') Lorem ipsum dolor sit amet consectetur
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                        a.ps3(href='#') PS3
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_3.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') ut labore et dolore magna aliqua
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                        a.ps-vista(href='#') Ps Vista
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_1.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') sed do eiusmod tempor incididunt
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_2.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') Lorem ipsum dolor sit amet consectetur
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.pc(href='#') PC
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                        a.button.small.yellow.align-btn-right(href='#') More Latest
+                                    // / .gamelist
+                                // / #tab1
+                                #tab3.tab-content
+                                    .gamelist
+                                        ul.clearfix
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/img_3.jpg', width='313', height='220', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') nt in culpa qui offici
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                        a.ps3(href='#') PS3
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/img_1.jpg', width='313', height='220', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') Lorem ipsum dolor sit amet consectetur
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                        a.ps3(href='#') PS3
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_2.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') Lorem ipsum dolor sit amet consectetur
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.pc(href='#') PC
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_3.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') ut labore et dolore magna aliqua
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                        a.ps-vista(href='#') Ps Vista
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                            li
+                                                a(href='#')
+                                                    img(src='images/temp/temp_thumbs_1.jpg', width='159', height='100', alt='')
+                                                .caption
+                                                    span.date Thursday 22-Mar-2013 12:37 PM
+                                                    h5.title
+                                                        a(href='#') sed do eiusmod tempor incididunt
+                                                    .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                    a.comments-icon(href='#') 23 comments
+                                                    .platform-teaser
+                                                        a.xbox(href='#') Xbox360
+                                                        a.pc(href='#') PC
+                                                    // / .platform-teaser
+                                                    .star
+                                                // / .caption
+                                                .clear
+                                        a.button.small.yellow.align-btn-right(href='#') More Latest
+                                    // / .gamelist
+                                // / #tab1
+                            // / .tabs-container
+                        // / .tabs-1
+                        // *************** - END Tabs Container - ***************
+                        // *************** - Reviews - ***************
+                        .one-third
+                            .reviews
+                                .title-caption
+                                    h3 Reviews
+                                    a.rss(href='#')
+                                // / .title
+                                .gamelist
+                                    ul.clearfix
+                                        li
+                                            a(href='#')
+                                                img(src='images/temp/img_3.jpg', width='313', height='220', alt='')
+                                            .caption
+                                                span.date Thursday 22-Mar-2013 12:37 PM
+                                                h5.title
+                                                    a(href='#') deserunt mollit anim id est laborum
+                                                .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                a.comments-icon(href='#') 23 comments
+                                                .platform-teaser
+                                                    a.xbox(href='#') Xbox360
+                                                    a.pc(href='#') PC
+                                                    a.ps3(href='#') PS3
+                                                // / .platform-teaser
+                                                .star
+                                            // / .caption
+                                            .clear
+                                        li
+                                            a(href='#')
+                                                img(src='images/temp/temp_thumbs_3.jpg', width='159', height='100', alt='')
+                                            .caption
+                                                span.date Thursday 22-Mar-2013 12:37 PM
+                                                h5.title
+                                                    a(href='#') ut labore et dolore magna aliqua
+                                                .description Lorem ipsum dolor sit amet consec...
+                                                a.comments-icon(href='#') 23 comments
+                                                .platform-teaser
+                                                    a.xbox(href='#') Xbox360
+                                                // / .platform-teaser
+                                                .star
+                                            // / .caption
+                                            .clear
+                                        li
+                                            a(href='#')
+                                                img(src='images/temp/temp_thumbs_4.jpg', width='159', height='100', alt='')
+                                            .caption
+                                                span.date Thursday 22-Mar-2013 12:37 PM
+                                                h5.title
+                                                    a(href='#') Lorem ipsum dolor sit amet
+                                                .description Qui officia deserunt mollit anim id est laborum
+                                                a.comments-icon(href='#') 23 comments
+                                                .platform-teaser
+                                                    a.pc(href='#') PC
+                                                    a.ps3(href='#') PS3
+                                                // / .platform-teaser
+                                                .star
+                                            // / .caption
+                                            .clear
+                                        li
+                                            a(href='#')
+                                                img(src='images/temp/temp_thumbs_5.jpg', width='159', height='100', alt='')
+                                            .caption
+                                                span.date Thursday 22-Mar-2013 12:37 PM
+                                                h5.title
+                                                    a(href='#') sed do eiusmod tempor
+                                                .description Duis aute irure dolor in reprehenderit
+                                                a.comments-icon(href='#') 23 comments
+                                                .platform-teaser
+                                                    a.ps3(href='#') PS3
+                                                // / .platform-teaser
+                                                .star
+                                            // / .caption
+                                            .clear
+                                    a.see-all(href='#') See all »
+                                // / .gamelist
+                            // / .reviews
+                        // / .one-third
+                        // *************** - END Reviews - ***************
+                        // *************** - Previews - ***************
+                        .one-third.last
+                            .reviews
+                                .title-caption
+                                    h3 Previews
+                                    a.rss(href='#')
+                                // / .title
+                                .gamelist
+                                    ul.clearfix
+                                        li
+                                            a(href='#')
+                                                img(src='images/temp/img_4.jpg', width='313', height='220', alt='')
+                                            .caption
+                                                span.date Thursday 22-Mar-2013 12:37 PM
+                                                h5.title
+                                                    a(href='#') Lorem ipsum dolor sit amet consectetur
+                                                .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                                a.comments-icon(href='#') 23 comments
+                                                .platform-teaser
+                                                    a.xbox(href='#') Xbox360
+                                                // / .platform-teaser
+                                                .star
+                                            // / .caption
+                                            .clear
+                                        li
+                                            a(href='#')
+                                                img(src='images/temp/temp_thumbs_3.jpg', width='159', height='100', alt='')
+                                            .caption
+                                                span.date Thursday 22-Mar-2013 12:37 PM
+                                                h5.title
+                                                    a(href='#') ut labore et dolore magna aliqua
+                                                .description Labore et dolore magna ali
+                                                a.comments-icon(href='#') 23 comments
+                                                .platform-teaser
+                                                    a.pc(href='#') PC
+                                                // / .platform-teaser
+                                                .star
+                                            // / .caption
+                                            .clear
+                                        li
+                                            a(href='#')
+                                                img(src='images/temp/temp_thumbs_4.jpg', width='159', height='100', alt='')
+                                            .caption
+                                                span.date Thursday 22-Mar-2013 12:37 PM
+                                                h5.title
+                                                    a(href='#') Lorem ipsum dolor do eiusmod tempor
+                                                .description Do consequat. Duis aute irure dolor in reprehen
+                                                a.comments-icon(href='#') 23 comments
+                                                .platform-teaser
+                                                    a.xbox(href='#') Xbox360
+                                                    a.pc(href='#') PC
+                                                // / .platform-teaser
+                                                .star
+                                            // / .caption
+                                            .clear
+                                        li
+                                            a(href='#')
+                                                img(src='images/temp/temp_thumbs_5.jpg', width='159', height='100', alt='')
+                                            .caption
+                                                span.date Thursday 22-Mar-2013 12:37 PM
+                                                h5.title
+                                                    a(href='#') Lorem ipsum dolor sit amet
+                                                .description Lorem ipsum dolor sit a
+                                                a.comments-icon(href='#') 23 comments
+                                                .platform-teaser
+                                                    a.xbox(href='#') Xbox360
+                                                // / .platform-teaser
+                                                .star
+                                            // / .caption
+                                            .clear
+                                    a.see-all(href='#') See all »
+                                // / .gamelist
+                            // / .reviews
+                        // / .one-third .last
+                        // *************** - END Previews - ***************
+                    // / #content
+                    // ************** - END Content - **************
+                    // ************** - Sidebar - **************
+                    aside#sidebar
+                        // ************** - Categories - **************
+                        .categories.widget.clearfix
+                            .title-caption
+                                h3 Categories
+                            // / .title-caption
+                            ul
+                                li.active
+                                    div
+                                        a(href='#') Action
+                                        span (293)
+                                li
+                                    div
+                                        a(href='#') Racing
+                                        span (76)
+                                li
+                                    div
+                                        a(href='#') Adventure
+                                        span (108)
+                                li
+                                    div
+                                        a(href='#') Role-Playing
+                                        span (72)
+                                li
+                                    div
+                                        a(href='#') Fighting
+                                        span (52)
+                                li
+                                    div
+                                        a(href='#') Shooter
+                                        span (174)
+                                li
+                                    div
+                                        a(href='#') Kids & Family
+                                        span (25)
+                                li
+                                    div
+                                        a(href='#') Simulation
+                                        span (98)
+                                li
+                                    div
+                                        a(href='#') LucasArts
+                                        span (0)
+                                li
+                                    div
+                                        a(href='#') Sports
+                                        span (180)
+                                li
+                                    div
+                                        a(href='#') Music
+                                        span (67)
+                                li
+                                    div
+                                        a(href='#') Strategy
+                                        span (57)
+                                li
+                                    div
+                                        a(href='#') Puzzle
+                                        span (23)
+                        // / .categories
+                        // ************** - END Categories - **************
+                        // ************** - Top Games - **************
+                        .topgames.widget
+                            .title-caption
+                                h3 Top Games
+                            // / .title-captin
+                            .entry-holder
+                                .tabs-2
+                                    ul.tabs-nav.tabs-2.clearfix
+                                        li
+                                            a(href='#tab4') All
+                                        li
+                                            a(href='#tab5') Xbox369
+                                        li
+                                            a(href='#tab6') PC
+                                        li
+                                            a(href='#tab7') PS3
+                                    // / .tabs-nav
+                                    .tabs-container
+                                        #tab4.tab-content
+                                            ul.rate
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_4.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Lorem ipsum dolor sit amet consec
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_5.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Qui officia deserunt mollit anim id est laborum
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_6.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Deserunt mollit anim id est laborum
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                            // / .rate
+                                        // / #tab4
+                                        #tab5.tab-content
+                                            ul.rate
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_5.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Qui officia deserunt mollit anim id est laborum
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_4.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Lorem ipsum dolor sit amet consec
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_6.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Deserunt mollit anim id est laborum
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                            // / .rate
+                                        // / #tab5
+                                        #tab6.tab-content
+                                            ul.rate
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_5.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Qui officia deserunt mollit anim id est laborum
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_6.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Deserunt mollit anim id est laborum
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_4.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Lorem ipsum dolor sit amet consec
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                            // / .rate
+                                        // / #tab6
+                                        #tab7.tab-content
+                                            ul.rate
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_6.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Deserunt mollit anim id est laborum
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_4.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Lorem ipsum dolor sit amet consec
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                                li
+                                                    a(href='top-games.html')
+                                                        img.alignleft(src='images/temp/temp_thumbs_5.jpg', width='94', height='60', alt='')
+                                                    .teaser-content
+                                                        h6
+                                                            a.title(href='top-games.html') Qui officia deserunt mollit anim id est laborum
+                                                        .star
+                                                    // / .teaser-conent
+                                                    .clear
+                                            // / .rate
+                                        // / #tab7
+                                        a.see-all(href='#') See all »
+                                    // / .tabs container
+                                // / .tabs-2
+                            // / .entry-holder
+                        // / .topgames
+                        // ************** - END Holder - **************
+                        // ************** - Latest Videos - **************
+                        .latest-video.widget
+                            .title-caption-dark
+                                h3 Latest Videos
+                                a.more-all(href='#') See all
+                            // / .title-caption-dark
+                            #jp_container_1.jp-video.jp-video-270p
+                                .jp-type-single
+                                    #jplayer.jp-jplayer
+                                    .jp-gui
+                                        .jp-video-play
+                                            a.jp-video-play-icon(href='javascript:;', tabindex='1') play
+                                        .jp-interface
+                                            .jp-progress
+                                                .jp-seek-bar
+                                                    .jp-play-bar
+                                            .jp-current-time
+                                            .jp-duration
+                                            .jp-controls-holder
+                                                ul.jp-controls
+                                                    li
+                                                        a.jp-play(href='javascript:;', tabindex='1') play
+                                                    li
+                                                        a.jp-pause(href='javascript:;', tabindex='1') pause
+                                                    li
+                                                        a.jp-stop(href='javascript:;', tabindex='1') stop
+                                                    li
+                                                        a.jp-mute(href='javascript:;', tabindex='1', title='mute') mute
+                                                    li
+                                                        a.jp-unmute(href='javascript:;', tabindex='1', title='unmute') unmute
+                                                    li
+                                                        a.jp-volume-max(href='javascript:;', tabindex='1', title='max volume') max volume
+                                                .jp-volume-bar
+                                                    .jp-volume-bar-value
+                                                ul.jp-toggles
+                                                    li
+                                                        a.jp-full-screen(href='javascript:;', tabindex='1', title='full screen') full screen
+                                                    li
+                                                        a.jp-restore-screen(href='javascript:;', tabindex='1', title='restore screen') restore screen
+                                                    li
+                                                        a.jp-repeat(href='javascript:;', tabindex='1', title='repeat') repeat
+                                                    li
+                                                        a.jp-repeat-off(href='javascript:;', tabindex='1', title='repeat off') repeat off
+                            ul.video-list
+                                li
+                                    a.zoom(href='top-games.html')
+                                        img(src='images/temp/video_img_1.jpg', width='94', height='60', alt='')
+                                    .teaser-content
+                                        h6
+                                            a.title(href='top-games.html') Qui officia deserunt mollit anim id est laborum
+                                        .star
+                                    // / .teaser-conent
+                                    .clear
+                                li
+                                    a.zoom(href='top-games.html')
+                                        img(src='images/temp/video_img_2.jpg', width='94', height='60', alt='')
+                                    .teaser-content
+                                        h6
+                                            a.title(href='top-games.html') Qui officia deserunt mollit anim id est laborum
+                                        .star
+                                    // / .teaser-conent
+                                    .clear
+                                li
+                                    a.zoom(href='top-games.html')
+                                        img(src='images/temp/video_img_3.jpg', width='94', height='60', alt='')
+                                    .teaser-content
+                                        h6
+                                            a.title(href='top-games.html') Qui officia deserunt mollit anim id est laborum
+                                        .star
+                                    // / .teaser-conent
+                                    .clear
+                            // / .video-list
+                        // / .latest-video
+                        // ************ - END Latest Videos - ************
+                    // / #sidebar
+                    // ************** - END Sidebar - **************
+                // / .entry
+                // ************** - END Entry - **************
+                // ********************* - Footer - *********************
+                footer#footer.clearfix
+                    section.entry-footer.clearfix
+                        .one-fourth
+                            h3 Latest Tweets
+                            #jstwitter
+                            .more.text-align-right
+                                a(href='#')
+                                    | See all
+                                    span »
+                        // / .one-fourth
+                        .one-fourth
+                            h3 Flickr Photos
+                            ul#flickr-badge.clearfix
+                            .more.text-align-left
+                                a(href='#')
+                                    | View more photos
+                                    span »
+                        // / .one-fourth
+                        .one-fourth
+                            h3 About Us
+                            .text
+                                p
+                                    | Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                    | labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    | ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                    | sint occaecat cupidatat.
+                                .more.text-align-left
+                                    a(href='about.html')
+                                        | Read more
+                                        span »
+                            // / .text
+                        // / .one-fourth
+                        .one-fourth.last
+                            #tabs-footer
+                                ul.tabs-nav.clearfix
+                                    li
+                                        a(href='#tab8') Archives
+                                    li
+                                        a(href='#tab9') Categories
+                                // / .tabs-nav
+                                .tabs-container
+                                    #tab8.tab-content
+                                        ul.custom-formatting
+                                            li
+                                                a(href='#') January 2013
+                                            li
+                                                a(href='#') December 2013
+                                            li
+                                                a(href='#') November 2013
+                                            li
+                                                a(href='#') October 2013
+                                            li
+                                                a(href='#') September 2013
+                                            li
+                                                a(href='#') August 2013
+                                            li
+                                                a(href='#') July 2013
+                                    // / #tab8
+                                    #tab9.tab-content
+                                        ul.custom-formatting
+                                            li
+                                                a(href='#') Sed do eiusmod tempor
+                                            li
+                                                a(href='#') Lorem ipsum dolor sit amet
+                                            li
+                                                a(href='#') Ut labore et dolore magna
+                                            li
+                                                a(href='#') Duis aute irure dolor in reprehen
+                                            li
+                                                a(href='#') Set i dolor psum dolor sit amet
+                                            li
+                                                a(href='#') Qui officia deserunt mollit anim
+                                            li
+                                                a(href='#') Deserunt mollit anim id laborum
+                                    // / #tab9
+                                // / .tabs-container
+                            // / .tabs-footer
+                        // / .one-fourth.last
+                    // / .entry-footer
+                    .copyright
+                        | Copyright © 2013. ThemeMakers. All rights reserved
+                    // / .copyright
+                // / #footer
+                // ******************* - END Footer - *******************
+            // / .container
+            // *************** - END Container - ***************
+        // / #wrapper
+        #control_panel
+            a#control_label(href='#')
+        // #control_panel
+        // ***************** - END Wrapper - *****************
+        script(type='text/javascript', src='js/jquery-ui-1.8.16.custom.min.js')
+        script(type='text/javascript', src='js/jquery.mousewheel.min.js')
+        script(type='text/javascript', src='js/general.js')
+        div(style='display:none')
+            script(src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540', language='JavaScript', charset='gb2312')
